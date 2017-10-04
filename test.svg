@@ -1,7 +1,7 @@
 <svg viewBox="0 0 1000 300"
      xmlns="http://www.w3.org/2000/svg" 
      xmlns:xlink="http://www.w3.org/1999/xlink">
-	 <style><![CDATA[@font-face{font-family:F8;src:url("fond/Martel/Martel-Regular.ttf");}]]></style>
+	 <style><![CDATA[@font-face{font-family:F8;src:url("fond/LibreBarcode39Extended/LibreBarcode39Extended-Regular.ttf");}]]></style>
 	 
   <defs>
     <path id="MyPath"
