@@ -1,2 +1,2 @@
 # dabexptxt
-An experimental book to wrap my thoughts and aesthetics around which.
+An experimental book to wrap my thoughts and aesthetics with.
