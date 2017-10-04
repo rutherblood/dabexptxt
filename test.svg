@@ -1,7 +1,7 @@
 <svg viewBox="0 0 1000 300"
      xmlns="http://www.w3.org/2000/svg" 
      xmlns:xlink="http://www.w3.org/1999/xlink">
-	 <style><![CDATA[@font-face{font-family:F8;src:url("fond/LibreBarcode39Extended/LibreBarcode39Extended-Regular.ttf");}]]></style>
+	 <style><![CDATA[@font-face{font-family:F8;src:url("fond/Martel/Martel-Regular.ttf");}]]></style>
 	 
   <defs>
     <path id="MyPath"
@@ -15,9 +15,9 @@
 	<animateTransform attributeName="transform" attributeType="XML"
                     type="rotate" from="1 500 100" to="360 500 100" dur="10s" repeatCount="indefinite"
                     additive="replace" fill="freeze"/>
-  <text font-family="F8" fill="red" font-size="42.5">
+  <text font-family="F8" fill="red" font-size="55.5" letter-spacing="1px" word-spacing="1px" style="white-space: pre">
     <textPath xlink:href="#MyPath">
-      We go up, then we go down, then up again
+we go up, then we go down, then up again  
     </textPath>
   </text>
   </g>
