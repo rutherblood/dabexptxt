@@ -5,7 +5,7 @@
 	 
   <defs>
     <path id="MyPath"
-          d="M400,100a100,100 0 1,0 200,0a100,100 0 1,0 -200,0"/>
+          d="M300,100a200,200 0 1,0 400,0a200,200 0 1,0 -400,0" stroke="white"/>
   </defs>
 
   <use xlink:href="#MyPath" fill="none" stroke="red"  />
@@ -13,15 +13,12 @@
   <g>
   
 	<animateTransform attributeName="transform" attributeType="XML"
-                    type="rotate" from="1 500 100" to="360 500 100" dur="5s" repeatCount="indefinite"
+                    type="rotate" from="1 500 100" to="360 500 100" dur="10s" repeatCount="indefinite"
                     additive="replace" fill="freeze"/>
-  <text font-family="F8" font-size="42.5">
+  <text font-family="F8" fill="red" font-size="42.5">
     <textPath xlink:href="#MyPath">
       We go up, then we go down, then up again
     </textPath>
   </text>
   </g>
-  <!-- Show outline of the viewport using 'rect' element -->
-  <rect x="1" y="1" width="998" height="298"
-        fill="none" stroke="black" stroke-width="2" />
 </svg>
