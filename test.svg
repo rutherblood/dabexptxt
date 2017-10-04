@@ -13,7 +13,7 @@
   <g>
   
 	<animateTransform attributeName="transform" attributeType="XML"
-                    type="rotate" from="1 500 100" to="50 500 100" dur="10s"
+                    type="rotate" from="1 500 100" to="360 500 100" dur="5s" repeatCount="indefinite"
                     additive="replace" fill="freeze"/>
   <text font-family="F8" font-size="42.5">
     <textPath xlink:href="#MyPath">
