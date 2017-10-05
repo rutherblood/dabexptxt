@@ -1,11 +1,13 @@
 <svg viewBox="0 0 1000 300"
      xmlns="http://www.w3.org/2000/svg" 
      xmlns:xlink="http://www.w3.org/1999/xlink">
-	 <style><![CDATA[@font-face{font-family:F8;src:url("fond/Martel/Martel-Regular.ttf");}]]></style>
+	 <style><![CDATA[@font-face{font-family:F8;src:url("fond/Martel/Martel-Regular.ttf");@font-face{font-family:F9;src:url("fond/Lora/Lora-Regular.ttf");}]]></style>
 	 
   <defs>
     <path id="MyPath"
           d="M300,100a200,200 0 1,0 400,0a200,200 0 1,0 -400,0" stroke="white"/>
+	<path id="MyPath2"
+          d="M200,100a300,300 0 1,0 600,0a300,300 0 1,0 -600,0" stroke="white"/>
   </defs>
 
   <use xlink:href="#MyPath" fill="none" stroke="red"  />
@@ -15,10 +17,21 @@
 	<animateTransform attributeName="transform" attributeType="XML"
                     type="rotate" from="1 500 100" to="360 500 100" dur="10s" repeatCount="indefinite"
                     additive="replace" fill="freeze"/>
-  <text font-family="F8" fill="red" font-size="55.5" letter-spacing="1px" word-spacing="1px" style="white-space: pre">
+  <text font-family="F8" fill="blue" font-size="55.5" letter-spacing="1px" word-spacing="1px" style="white-space: pre">
     <textPath xlink:href="#MyPath">
-we go up, then we go down, then up again  
+		we go up, then we go down, then up again  
     </textPath>
-  </text>
+  </text>  
+  </g>
+  <g>
+  
+	<animateTransform attributeName="transform" attributeType="XML"
+                    type="rotate" from="0 500 100" to="-360 500 100" dur="20s" repeatCount="indefinite"
+                    additive="replace" fill="freeze"/>
+  <text font-family="F9" fill="black" font-size="54.5" letter-spacing="1px" word-spacing="1px" style="white-space: pre">
+    <textPath xlink:href="#MyPath2">
+  We saw <tspan font-size="55" fill="red" rotate="180">22</tspan> people die where we could have been walking not two months before
+    </textPath>
+  </text>  
   </g>
 </svg>
