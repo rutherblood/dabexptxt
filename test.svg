@@ -28,9 +28,9 @@
 	<animateTransform attributeName="transform" attributeType="XML"
                     type="rotate" from="0 500 100" to="-360 500 100" dur="20s" repeatCount="indefinite"
                     additive="replace" fill="freeze"/>
-  <text font-family="F9" fill="black" font-size="54.5" letter-spacing="1px" word-spacing="1px" style="white-space: pre">
+  <text font-family="F9" fill="black" font-size="54.5" letter-spacing="1px" word-spacing="1px" style="white-space: pre" rotate="180">
     <textPath xlink:href="#MyPath2">
-  We saw <tspan font-size="55" fill="red" rotate="180">22</tspan> people die where we could have been walking not two months before
+  erofeb shtnom owt ton gniklaw neeb evah dluoc ew erehw eid elpoep <tspan font-size="55" fill="red">42</tspan> was eW
     </textPath>
   </text>  
   </g>
