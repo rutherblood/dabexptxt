@@ -40,9 +40,9 @@
   
 	<animateTransform attributeName="transform" attributeType="XML"
                     type="rotate" from="0 500 400" to="-360 500 400" dur="20s" repeatCount="indefinite"/>
-  <text font-family="F8" fill="black" font-size="47.5" rotate="180">
+  <text font-family="F8" fill="black" font-size="47.5">
     <textPath xlink:href="#MyPath2">
-  erofeb shtnom owt ton gniklaw neeb evah dluoc ew erehw eid elpoep <tspan font-size="55" fill="red" dy="-20">42</tspan><tspan dy="20"> was eW</tspan>
+  erofeb shtnom owt ton gniklaw neeb evah dluoc ew erehw eid elpoep <tspan font-size="55" fill="red" dy="-20" rotate="180">42</tspan><tspan dy="20" rotate="180"> was eW</tspan>
     </textPath>
   </text>  
   </g>
