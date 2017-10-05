@@ -1,6 +1,20 @@
 <svg viewBox="0 0 1000 1000"
      xmlns="http://www.w3.org/2000/svg" 
-     xmlns:xlink="http://www.w3.org/1999/xlink">
+     xmlns:xlink="http://www.w3.org/1999/xlink" onload="doit(evt)">
+<script type="application/ecmascript"><![CDATA[
+	var maxang = 360;
+	var ang = 0;
+	function doit(evt) {
+		animify(evt.target.ownerDocument.getElementById("here"));
+	}
+	function animify(what) {
+		if(ang >= maxang) ang = 0;
+		else ang+=2;
+		what.setAttribute("rotate",ang);
+		setTimeout(animify,10,what);
+	}
+]]>
+</script>
 <style>
 <![CDATA[
 	 @font-face {
@@ -13,7 +27,7 @@
 	}
 	@font-face {
 		font-family:'F1';
-		src:url("fond/Dancing_Script/DancingScript-Regular.ttf");
+		src:url("fond/Monsieur_La_Doulaise/MonsieurLaDoulaise-Regular.ttf");
 	}
 ]]></style>
 	 
@@ -30,7 +44,7 @@
   
 	<animateTransform attributeName="transform" attributeType="XML"
                     type="rotate" from="1 500 400" to="360 500 400" dur="10s" repeatCount="indefinite"/>
-  <text font-family="F8" fill="blue" font-size="56.5" letter-spacing="1px" word-spacing="1px">
+  <text font-family="F8" fill="crimson" font-size="56.5" letter-spacing="1px" word-spacing="1px">
     <textPath xlink:href="#MyPath">
 		must we fight must we fight must we fight must we  
     </textPath>
@@ -40,9 +54,9 @@
   
 	<animateTransform attributeName="transform" attributeType="XML"
                     type="rotate" from="0 500 400" to="-360 500 400" dur="20s" repeatCount="indefinite"/>
-  <text font-family="F8" fill="black" font-size="47.5">
+  <text font-family="F1" fill="black" font-size="85.5" id="here">
     <textPath xlink:href="#MyPath2">
-  erofeb shtnom owt ton gniklaw neeb evah dluoc ew erehw eid elpoep <tspan font-size="55" fill="red" dy="-20" rotate="180">42</tspan><tspan dy="20" rotate="180"> was eW</tspan>
+  erofeb shtnom owt ton gniklaw neeb evah dluoc ew erehw eid elpoep <tspan font-size="55" fill="red">22</tspan><tspan rotate="180"> </tspan><tspan id="here-sub">was ew</tspan>
     </textPath>
   </text>  
   </g>

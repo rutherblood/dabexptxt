@@ -1,0 +1,40 @@
+<svg viewBox="0 0 1000 1000"
+     xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" onload="doit(evt)">
+<script type="application/ecmascript"><![CDATA[
+	var maxang = 90;
+	var ang = 0;
+	function doit(evt) {
+		animify(evt.target.ownerDocument.getElementById("here"));
+	}
+	function animify(what) {
+		if(ang >= maxang) return;//ang = 0;
+		else ang++;
+		what.setAttribute("rotate",ang);
+		setTimeout(animify,30,what);
+	}
+]]>
+</script>
+	 
+  <defs>
+    <path id="MyPath"
+          d="M100,400a200,200 0 1,1 400,0a200,200 0 1,1 -400,0" stroke="black"/>
+  </defs>
+
+  <use xlink:href="#MyPath" fill="none" stroke="black"  />
+  <g>
+  
+  <text fill="green" font-size="26.5">
+    <textPath xlink:href="#MyPath3">
+		blood  
+    </textPath>
+  </text>  
+  </g>
+  <g>
+  <text fill="crimson" font-size="56.5">
+    <textPath xlink:href="#MyPath">
+		must we fight must we fight must we fight must we  
+    </textPath>
+  </text>  
+  </g>
+</svg>
