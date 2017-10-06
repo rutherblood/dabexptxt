@@ -11,7 +11,9 @@
 		if(ang >= maxang) ang = 0;
 		else ang+=2;
 		what.setAttribute("rotate",ang);
-		setTimeout(animify,15,what);
+		if(ang <= 5 && ang>=-5)
+			setTimeout(animify,20,what);
+		else setTimeout(animify,15,what);
 	}
 ]]>
 </script>
@@ -43,7 +45,14 @@
 	  -moz-transition: fill 2s ease;
 	  -ms-transition: fill 2s ease;
 	  -o-transition: fill 2s ease;
+	  transition: fill 2s ease;
 		fill: #69F0AE;
+		-webkit-transition: text-shadow 2s ease;
+	  -moz-transition: text-shadow 2s ease;
+	  -ms-transition: text-shadow 2s ease;
+	  -o-transition: text-shadow 2s ease;
+	  transition: text-shadow 2s ease;
+		text-shadow: 0px 0px 6px #880e4f;
 	}
 	.lnk2 {
 	  -webkit-transition: fill 2s ease;
@@ -59,7 +68,14 @@
 	  -moz-transition: fill 2s ease;
 	  -ms-transition: fill 2s ease;
 	  -o-transition: fill 2s ease;
+	  transition: fill 2s ease;
 		fill: #FFAB00;
+		-webkit-transition: text-shadow 2s ease;
+	  -moz-transition: text-shadow 2s ease;
+	  -ms-transition: text-shadow 2s ease;
+	  -o-transition: text-shadow 2s ease;
+	  transition: text-shadow 2s ease;
+		text-shadow: 0px 0px 6px #880e4f;
 	}
 ]]></style>
 	 
