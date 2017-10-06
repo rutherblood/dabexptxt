@@ -11,7 +11,7 @@
 		if(ang >= maxang) ang = 0;
 		else ang+=2;
 		what.setAttribute("rotate",ang);
-		setTimeout(animify,10,what);
+		setTimeout(animify,15,what);
 	}
 ]]>
 </script>
@@ -29,6 +29,38 @@
 		font-family:'F1';
 		src:url("fond/Monsieur_La_Doulaise/MonsieurLaDoulaise-Regular.ttf");
 	}
+	.lnk {
+	  -webkit-transition: fill 2s ease;
+	  -moz-transition: fill 2s ease;
+	  -ms-transition: fill 2s ease;
+	  -o-transition: fill 2s ease;
+	  transition: fill 2s ease;
+	  fill: #004D40;
+	}
+	.lnk:hover {
+		cursor: pointer;
+	  -webkit-transition: fill 2s ease;
+	  -moz-transition: fill 2s ease;
+	  -ms-transition: fill 2s ease;
+	  -o-transition: fill 2s ease;
+		fill: #69F0AE;
+	}
+	.lnk2 {
+	  -webkit-transition: fill 2s ease;
+	  -moz-transition: fill 2s ease;
+	  -ms-transition: fill 2s ease;
+	  -o-transition: fill 2s ease;
+	  transition: fill 2s ease;
+	  fill: #000000;
+	}
+	.lnk2:hover {
+		cursor: pointer;
+	  -webkit-transition: fill 2s ease;
+	  -moz-transition: fill 2s ease;
+	  -ms-transition: fill 2s ease;
+	  -o-transition: fill 2s ease;
+		fill: #FFAB00;
+	}
 ]]></style>
 	 
   <defs>
@@ -44,7 +76,7 @@
   
 	<animateTransform attributeName="transform" attributeType="XML"
                     type="rotate" from="1 500 400" to="360 500 400" dur="10s" repeatCount="indefinite"/>
-  <text font-family="F8" fill="crimson" font-size="56.5" letter-spacing="1px" word-spacing="1px">
+  <text font-family="F8" font-size="56.5" letter-spacing="1px" word-spacing="1px"  class="lnk">
     <textPath xlink:href="#MyPath">
 		must we fight must we fight must we fight must we  
     </textPath>
@@ -54,7 +86,7 @@
   
 	<animateTransform attributeName="transform" attributeType="XML"
                     type="rotate" from="0 500 400" to="-360 500 400" dur="20s" repeatCount="indefinite"/>
-  <text font-family="F1" fill="black" font-size="85.5" id="here">
+  <text font-family="F1" font-size="85.5" id="here" class="lnk2">
     <textPath xlink:href="#MyPath2">
 	we saw <tspan font-size="87" fill="red">22</tspan> people die where we could have been walking not two months before
     </textPath>
